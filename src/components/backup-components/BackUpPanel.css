@@ -1,0 +1,32 @@
+.backup-card-title {
+    text-align: left;
+
+}
+
+.backup-card-text {
+    word-wrap: break-word;
+    text-align: left;
+    overflow: auto;
+}
+
+
+
+.backup-card-img {
+    width: 200px;
+}
+
+.backup-card-tools {
+    background-color: #f8f9fa !important;
+    padding: 1.25rem;
+}
+
+.backup-previewZone {
+    width: 165px;
+    height: 165px;
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+    border: 2px solid #f6f6f6;
+    background-color: #f6f6f6;
+    border-radius: 5px 5px 5px 5px px;
+}

@@ -1,0 +1,66 @@
+body {
+    background-color: #eee;
+
+}
+
+.bdge {
+    height: 21px;
+    background-color: orange;
+    color: #fff;
+    font-size: 11px;
+    padding: 8px;
+    border-radius: 4px;
+    line-height: 3px;
+}
+
+.comments {
+    text-decoration: underline;
+    text-underline-position: under;
+    cursor: pointer;
+}
+
+.dot {
+    height: 7px;
+    width: 7px;
+    margin-top: 3px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.hit-voting:hover {
+    color: blue;
+}
+
+.hit-voting {
+    cursor: pointer;
+}
+
+.break-word {
+    word-wrap: break-word;
+}
+
+.link-style {
+    color: #6c757d;
+}
+
+.link-style:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.input-like {
+    background-color: #f6f6f6;
+    border: none;
+    color: #0d0d0d;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    width: 85%;
+    border: 2px solid #f6f6f6;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px 5px 5px 5px;
+}

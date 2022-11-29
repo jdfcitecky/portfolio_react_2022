@@ -1,0 +1,48 @@
+.home-card-title {
+    text-align: left;
+
+}
+
+.home-card-text {
+    word-wrap: break-word;
+    text-align: left;
+    height: 356px;
+}
+
+
+
+.home-card-img {
+    width: 200px;
+}
+
+.home-card-tools {
+    background-color: #f8f9fa !important;
+    padding: 1.25rem;
+}
+
+.home-previewZone {
+    width: 165px;
+    height: 165px;
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+    border: 2px solid #f6f6f6;
+    background-color: #f6f6f6;
+    border-radius: 5px 5px 5px 5px px;
+}
+
+.home-card-imageZone {
+    width: 200px;
+
+}
+
+.home-card-textZone {
+    width: 540px;
+
+
+}
+
+.home-card-imageFit {
+    object-fit: cover;
+    object-position: 20% 0;
+}

@@ -1,0 +1,25 @@
+.deleted {
+    display: none !important;
+}
+
+.commentFade {
+    animation-name: commentFaded;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes commentFaded {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

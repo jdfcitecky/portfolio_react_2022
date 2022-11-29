@@ -1,0 +1,127 @@
+textarea {
+    background-color: #f6f6f6;
+    border: none;
+    color: #0d0d0d;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    width: 85%;
+    border: 2px solid #f6f6f6;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.newtextarea {
+    background-color: #f6f6f6;
+    border: none;
+    color: #0d0d0d;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    width: 85%;
+    border: 2px solid #f6f6f6;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.form-control {
+    width: 85%;
+}
+
+.faded {
+    animation-name: myanimation;
+    animation-duration: 3000ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes myanimation {
+    0% {
+        background-color: #28a745;
+        border-color: #28a745;
+    }
+
+    50% {
+        background-color: #289aa7;
+        border-color: #289aa7;
+    }
+
+    100% {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+}
+
+.categorySelect {
+    width: 85% !important;
+    background-color: #f6f6f6;
+    border: none;
+    color: #0d0d0d;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    border: 2px solid #f6f6f6;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px 5px 5px 5px px;
+}
+
+.uploadZone {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    padding: 85px 0px 85px 0px;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid #f6f6f6;
+    border-radius: 5px 5px 5px 5px px;
+    text-align: center;
+}
+
+.uploadZone-highlight {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    padding: 85px 0px 85px 0px;
+    cursor: pointer;
+    background-color: #f6f6f6;
+    border: 2px solid #f6f6f6;
+    border-radius: 5px 5px 5px 5px px;
+    text-align: center;
+}
+
+.previewZone {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border: 2px solid #f6f6f6;
+    background-color: #f6f6f6;
+    border-radius: 5px 5px 5px 5px px;
+}
+
+img {
+    width: auto;
+    max-height: 100%;
+    max-width: 100%;
+}

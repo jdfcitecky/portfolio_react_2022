@@ -1,0 +1,28 @@
+.faded {
+    animation-name: myanimation;
+    animation-duration: 3000ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes myanimation {
+    0% {
+        background-color: #28a745;
+        border-color: #28a745;
+    }
+
+    50% {
+        background-color: #289aa7;
+        border-color: #289aa7;
+    }
+
+    100% {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+}
+
+.commentSendBtnWidth {
+    width: 100px;
+}
