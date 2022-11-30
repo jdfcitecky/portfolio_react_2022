@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Jumbotron from './ui-components/Jumbotron';
 import Card from './ui-components/Card';
 import Timeline from './ui-components/Timeline';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import "./Signin.css"
 export default class Signup extends Component {
     constructor(props) {
@@ -106,7 +107,8 @@ export default class Signup extends Component {
 
                                 <div id="formFooter">
                                     <p>If you have an account please </p>
-                                    <a className="underlineHover" href="/signin">sign in</a>
+                                    <Link className="underlineHover" to="/signin">sign in</Link>
+
                                 </div>
 
                             </div>
