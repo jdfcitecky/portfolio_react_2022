@@ -4,9 +4,38 @@ import Card from './ui-components/Card';
 import Timeline from './ui-components/Timeline';
 export default class Home extends Component {
     render() {
+        let dynamicHeight = -100
+        if (document.documentElement.clientWidth < 1000) {
+            dynamicHeight = 0
+        }
+        if (document.documentElement.clientWidth < 768) {
+            dynamicHeight = 300
+        }
+        if (document.documentElement.clientWidth < 460) {
+            dynamicHeight = 500
+        }
+        let dynamicHeightMore = 1100
+        if (document.documentElement.clientHeight >= 400) {
+            dynamicHeightMore = 900
+        }
+        if (document.documentElement.clientHeight >= 550) {
+            dynamicHeightMore = 700
+        }
+        if (document.documentElement.clientHeight >= 700) {
+            dynamicHeightMore = 600
+        }
+        if (document.documentElement.clientHeight >= 800) {
+            dynamicHeightMore = 400
+        }
+        if (document.documentElement.clientHeight >= 1000) {
+            dynamicHeightMore = 120
+        }
+        if (document.documentElement.clientHeight >= 1200) {
+            dynamicHeightMore = 0
+        }
         return (
             <div>
-                <div style={{ height: document.documentElement.clientHeight - 200 }} className='container fadeIn'>
+                <div style={{ height: document.documentElement.clientHeight + dynamicHeight + dynamicHeightMore }} className='container fadeIn'>
                     <Jumbotron text='UC Davis CS Master, 2019 Red Dot Design Award winner, 3 years experience full stack developer. Creator with Design Thinking and Technology.' />
                     <div className='row mb-2'>
                         <Card color='primary' category='Backend' text='Using Go, Python, NodeJS and the corresponding framework to implement various API micro-services including instant messaging, membership system, mall system, database operation, file server, crawler, chat robot, etc., and deploy on AWS with Docker.' link='/search/backend' linkwords='See more' picture={`http://${process.env.REACT_APP_API_ADDRESS}/static/backup/js_web/js_web_1.png`} />

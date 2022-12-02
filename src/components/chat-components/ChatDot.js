@@ -53,6 +53,14 @@ export default class ChatDot extends Component {
 
     }
 
+    handleKeyPress = (event) => {
+        if (event.key === 'Enter') {
+            if (this.state.chatRoomID != -1 && this.state.chatRoomcollapse == true && this.state.isLoaded == true) {
+                this.handleSendClickWithWS()
+            }
+        }
+    }
+
     openWebSocket = (chatRoomID, memberID) => {
         //use WebSocket url to Server open link
         let stateName = String(chatRoomID)
@@ -869,7 +877,7 @@ export default class ChatDot extends Component {
                                     <div className="row">
                                         <div className="col-md-12 col-lg-12 col-xl-12">
                                             <div className='d-flex flex-row mb-3 pos-relative'>
-                                                <input name="message" id="message" placeholder="Type message" value={this.state.message} onChange={(event) => this.setState({ message: event.target.value })} type="text" className="form-control mr-2 ml-0 mt-0 chatRoomInput" />
+                                                <input name="message" id="message" placeholder="Type message" value={this.state.message} onChange={(event) => this.setState({ message: event.target.value })} onKeyPress={this.handleKeyPress} type="text" className="form-control mr-2 ml-0 mt-0 chatRoomInput" />
                                                 <div onClick={this.handleSendClickWithWS} className="chatListSearchBtn d-flex justify-content-center" >
                                                     <ChevronRight color='#333333' className="feather-16 feather-file-text align-self-center" />
                                                 </div>

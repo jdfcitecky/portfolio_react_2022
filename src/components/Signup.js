@@ -108,7 +108,6 @@ export default class Signup extends Component {
                                 <div id="formFooter">
                                     <p>If you have an account please </p>
                                     <Link className="underlineHover" to="/signin">sign in</Link>
-
                                 </div>
 
                             </div>

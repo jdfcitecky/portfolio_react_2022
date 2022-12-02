@@ -397,6 +397,26 @@ class Search extends Component {
 
     render() {
         let { worksShow, isLoaded, error, isEmpty } = this.state
+        let dynamicHeight = 1200
+        if (document.documentElement.clientHeight >= 400) {
+            dynamicHeight = 1000
+        }
+        if (document.documentElement.clientHeight >= 550) {
+            dynamicHeight = 800
+        }
+        if (document.documentElement.clientHeight >= 700) {
+            dynamicHeight = 700
+        }
+        if (document.documentElement.clientHeight >= 800) {
+            dynamicHeight = 500
+        }
+        if (document.documentElement.clientHeight >= 1000) {
+            dynamicHeight = 320
+        }
+        if (document.documentElement.clientHeight >= 1200) {
+            dynamicHeight = 120
+        }
+
         if (error) {
             return <p>Error: {error.message}</p>
         } else if (!isLoaded) {
@@ -460,7 +480,7 @@ class Search extends Component {
                     </div>
 
                 </div>
-                <div style={{ height: document.documentElement.clientHeight + 150 }} className='container'>
+                <div style={{ height: document.documentElement.clientHeight + dynamicHeight }} className='container'>
                     {worksShow.map((w) => (
                         <div className='row'>
                             <CardWork color={w.color} category={w.category} title={w.title} date={w.year} text={w.text} id={w.id} pictureone={w.pictureone} />

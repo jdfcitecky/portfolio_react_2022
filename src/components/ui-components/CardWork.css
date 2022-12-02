@@ -1,46 +1,200 @@
-.work-card-title {
-    text-align: left;
+@media (min-width: 1200px) {
+    .work-card-title {
+        text-align: left;
 
+    }
+
+    .work-card-text {
+        word-wrap: break-word;
+        text-align: left;
+    }
+
+
+
+    .work-card-img {
+        width: 200px;
+    }
+
+    .work-card-tools {
+        background-color: #f8f9fa !important;
+        padding: 1.25rem;
+    }
+
+    .work-previewZone {
+        width: 165px;
+        height: 165px;
+        margin: 5px;
+        padding: 10px;
+        cursor: pointer;
+        border: 2px solid #f6f6f6;
+        background-color: #f6f6f6;
+        border-radius: 5px 5px 5px 5px px;
+    }
+
+    .work-card-imageZone {
+        width: 200px;
+
+    }
+
+    .work-card-textZone {
+        width: 540px;
+
+    }
+
+    .work-card-imageFit {
+        object-fit: cover;
+        object-position: 25% 0;
+    }
 }
 
-.work-card-text {
-    word-wrap: break-word;
-    text-align: left;
+@media (min-width: 1000px) {
+    .work-card-title {
+        text-align: left;
+
+    }
+
+    .work-card-text {
+        word-wrap: break-word;
+        text-align: left;
+    }
+
+
+
+    .work-card-img {
+        width: 200px;
+    }
+
+    .work-card-tools {
+        background-color: #f8f9fa !important;
+        padding: 1.25rem;
+    }
+
+    .work-previewZone {
+        width: 165px;
+        height: 165px;
+        margin: 5px;
+        padding: 10px;
+        cursor: pointer;
+        border: 2px solid #f6f6f6;
+        background-color: #f6f6f6;
+        border-radius: 5px 5px 5px 5px px;
+    }
+
+    .work-card-imageZone {
+        width: 200px;
+
+    }
+
+    .work-card-textZone {
+        width: 540px;
+
+    }
+
+    .work-card-imageFit {
+        object-fit: cover;
+        object-position: 25% 0;
+    }
 }
 
+@media (min-width: 768px) and (max-width: 1000px) {
+    .work-card-title {
+        font-size: 17px;
+        text-align: left;
+
+    }
+
+    .work-card-text {
+        word-wrap: break-word;
+        text-align: left;
+    }
 
 
-.work-card-img {
-    width: 200px;
+
+    .work-card-img {
+        width: 200px;
+    }
+
+    .work-card-tools {
+        background-color: #f8f9fa !important;
+        padding: 1.25rem;
+    }
+
+    .work-previewZone {
+        width: 165px;
+        height: 165px;
+        margin: 5px;
+        padding: 10px;
+        cursor: pointer;
+        border: 2px solid #f6f6f6;
+        background-color: #f6f6f6;
+        border-radius: 5px 5px 5px 5px px;
+    }
+
+    .work-card-imageZone {
+
+        width: 100px;
+
+    }
+
+    .work-card-textZone {
+        width: 540px;
+
+    }
+
+    .work-card-imageFit {
+        object-fit: cover;
+        object-position: 25% 0;
+    }
 }
 
-.work-card-tools {
-    background-color: #f8f9fa !important;
-    padding: 1.25rem;
-}
+@media (min-width: 0px) and (max-width: 768px) {
+    .work-card-title {
+        font-size: 17px;
+        text-align: left;
 
-.work-previewZone {
-    width: 165px;
-    height: 165px;
-    margin: 5px;
-    padding: 10px;
-    cursor: pointer;
-    border: 2px solid #f6f6f6;
-    background-color: #f6f6f6;
-    border-radius: 5px 5px 5px 5px px;
-}
+    }
 
-.work-card-imageZone {
-    width: 200px;
+    .work-card-text {
+        width: 450px;
+        word-wrap: break-word;
+        text-align: left;
+    }
 
-}
 
-.work-card-textZone {
-    width: 540px;
 
-}
+    .work-card-img {
+        width: 200px;
+    }
 
-.work-card-imageFit {
-    object-fit: cover;
-    object-position: 25% 0;
+    .work-card-tools {
+        background-color: #f8f9fa !important;
+        padding: 1.25rem;
+    }
+
+    .work-previewZone {
+        width: 165px;
+        height: 165px;
+        margin: 5px;
+        padding: 10px;
+        cursor: pointer;
+        border: 2px solid #f6f6f6;
+        background-color: #f6f6f6;
+        border-radius: 5px 5px 5px 5px px;
+    }
+
+    .work-card-imageZone {
+        display: none;
+        width: 100px;
+
+    }
+
+    .work-card-textZone {
+        width: 540px;
+
+    }
+
+    .work-card-imageFit {
+        object-fit: cover;
+        object-position: 25% 0;
+    }
 }
